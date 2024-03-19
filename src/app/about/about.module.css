@@ -29,7 +29,6 @@
 }
 
 .box{
-    display: flex;
     flex-direction: column;
     gap: 10px;
 }
@@ -54,9 +53,8 @@
         text-align: center;
 
     }
-}
-
-.boxes{
-    flex-direction: column;
-    gap: 50px;
+    .boxes{
+        flex-direction: column;
+        gap: 50px;
+    }
 }
