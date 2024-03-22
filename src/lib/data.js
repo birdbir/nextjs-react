@@ -1,8 +1,7 @@
 // Temporary data
-
-import { connect } from "mongoose"
 import { connectToDb } from "./utils"
 import { Post, User } from "./models"
+import { unstable_noStore as noStore } from "next/cache"
 
 // const users = [
 //     {id:1, name: 'John'},
@@ -39,6 +38,7 @@ export const getPost = async(slug) => {
 }
 
 export const getUser = async(id) => {
+    noStore()
     try{
         connectToDb()
         const user = await User.findById(id)

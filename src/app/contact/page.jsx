@@ -5,6 +5,11 @@ import Image from 'next/image'
 
 // const HydrationTestNoSSR = dynamic(()=>import("@/conponets/hydrationTest"), {ssr: false})
 
+export const metadata = {
+  title: 'Contact Page',
+  description: 'contact',
+}
+
 const ContactPage = () => {  
   // const a = Math.random()
   // console.log(a)

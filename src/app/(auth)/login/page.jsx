@@ -1,8 +1,15 @@
+import { handleGithubLogin } from '@/lib/action'
+import { auth } from '@/lib/auth'
 import React from 'react'
 
-const LoginPage = () => {
+const LoginPage = async() => {
+
   return (
-    <div>LoginPage</div>
+    <div>
+      <form action={handleGithubLogin}>
+        <button>Login with Github</button>
+      </form>
+    </div>
   )
 }
 
