@@ -44,7 +44,7 @@ const Links = ({session}) => {
                 </form>
                 </>
             ) : (
-                <NavLink item={{title: "Login", path:"/Login"}}/>
+                <NavLink item={{title: "Login", path:"/login"}}/>
             )}
     </div>
     <Image className={styles.menuButton} src="/menu.png" alt="" width={30} height={30} onClick={()=>setOpen((prev)=>!prev)}/>
